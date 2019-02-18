@@ -1,0 +1,145 @@
+#include <stdio.h>
+
+/*
+int main(void)
+{
+int sum = 0 ,i
+
+for (i = 1; i <= 10; i++)
+{
+	if (i % 2 == 0)continue;
+	sum += i;
+	printf("짝수면 아래 문장을 진행하지 않고 증감식으로 이동하는 식")
+		return ();
+}
+}
+*/
+
+/*
+int main(void)
+{
+int sum = 0 ,i
+
+for (i = 1; i <= 10; i++)
+{
+	if (i % 2 == 0)continue;
+	sum += i;
+	printf("홀수면 아래 문장을 진행하지 않고 증감식으로 이동한다.")
+	return();
+}
+}
+*/
+
+/*
+int main(void)
+{
+int i, j;
+int a[2][3] = { {25,20},{50,40} }
+
+for (i = 0; i < 2; i++)
+{
+	for (j = 0; j < 3; j++)
+	{
+		print("a[%d][%d] = %d\n",i,j,a[i][j])
+	}
+}
+return 0;
+}
+*/
+
+// 문자 배열 - 널문자 선언 해야함
+
+/*
+int main(void)
+{
+int a;
+printf("정수 1개를 입력하시오.\n")
+scanf("%d", &a)
+
+printf("입력받은 정수의 값은 %d이다.\n", a);
+printf("입력받은 정수의 주소는 %p이다.\n"&a);
+	
+return 0;
+}
+*/
+
+/*
+int main(void)
+{
+int a[4] = { 10,20,30,40 };
+int i, arylength;
+
+arylength = sizeof(a) / sizeof(int);
+
+printf("배열의 원소 값을 출력하면 \n");
+for (i = 0; i < arylength; i++)
+{
+	printf("a[%d]=%d\n", i, a[i]);
+}
+
+printf("배열 원소의 주소를 출력하면 \n");
+for (i = 0; i < arylength; i++)
+{
+	printf("&a[%d]=%p\n", i, &a[i]);
+}
+	
+return 0;
+}
+*/
+캐릭터는 널 문자 넣어주기
+널 문자 만큼 공간을 잡아줘야 한다.
+배열 - 연속적으로 할당을 한 값.
+결과적으로 값을 읽는데 빨라 질 수 있다.
+
+EOF = enf of file
+
+//ch08 함수
+
+/* return 문을 한 번만 실행 되는 식을 만들 수 있다면 
+다른것이 더 있다하더라도 사용하지 않음.
+return문의 값은 하나로 끝.*/
+
+/*
+int SumTwo(int a, int b);  // 함수 선언
+
+int main(void)
+{
+int x = 10, y = 5;
+int value;
+
+value = SumTwo(x, y);  // 함수 호출
+
+printf("두 수의 합 : %d\n", value);
+
+return 0;
+}
+
+int SumTwo(int a, int b)   // 함수 정의
+{
+int result;
+result = a + b;
+return result;
+}
+*/
+
+/*
+void upper_case(char ch);
+int main(void)
+{
+char ch1, ch2;
+while ((ch1 = getchar()) != EOF) {
+	upper_case(ch1);
+}
+return 0;
+}
+
+void upper_case(char ch)
+{
+char res;
+if (ch >= 'a'&& ch <= 'z')
+	res = ch - 32;
+else
+	res = ch;
+putchar(res);
+}
+*/

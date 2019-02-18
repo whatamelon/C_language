@@ -1,0 +1,96 @@
+/*변수만 들어가 있는 class라고 이해하기*/
+
+/*
+#include <stdio.h>
+
+struct list{
+	char name;
+	char gender;
+	int age;
+};
+
+int main(void)
+{
+	struct list st1 = { 'T','M',25 };
+
+	printf("구조체 list의 크기는 %d이다. \n", sizeof(struct list));
+	printf("구조체 객체 st1의 크기는 %d이다. \n", sizeof(st1));
+
+	return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+
+struct students {
+	char name[20];
+	char address[30];
+	int age;
+};
+
+typedef struct students student;
+
+int main(void)
+{
+	student st1 = { "Moon", "Seoul",25 };
+	struct students st2 = { "John","London",30 };
+
+	printf("학생 1은 성이 %s이고 %s에 살며 %d살이다.\n", st1.name, st1.address, st1.age);
+	printf("학생 2는 성이 %s이고 %s에 살며 %d살이다.\n", st2.name, st2.address, st2.age);
+	
+	return 0;
+}
+*/
+//typedef 를 앞에 붙힐 수도 있지만 붙히면 객체 이름을 빠지고 밑에 이름만 선언함.
+//점 간의 거리 구하기 안봐도 됨. 이해를 돕기 위한 것.
+//화살표를 붙히면 내부로 접근 가능.
+
+/*
+#include <stdio.h>
+
+struct ThreeDime {
+	double x;
+	double y;
+	double z;
+};
+
+typedef struct ThreeDime ThreeDime;
+
+int main(void)
+{
+
+	ThreeDime A1 = { 3,1,8 };
+
+	ThreeDime*pA1 = &A1;
+
+	printf("3차원 점 A1의 x : %.2lf, y : %2If, z : %2If이다. \n", pA1->x, pA1->y, pA1->z);
+
+	return 0;
+}
+*/
+// 구조체를 인자로 받는 함수 -> callbyvalue형식임.
+// 구조체 포인터를 인자로 받는 함수 -> callbyref형식임.
+
+/*열거형은 struct와 거의 흡사함.
+상수값화 함.*/
+
+/*
+#include <stdio.h>
+ 
+int main(void)
+{
+	enum { yellow, red, blue, green } color;
+	printf("원하는 색을 입력하세요.\n");
+	printf("0번 : 노란색, 1번 : 빨간색\n");
+	printf("2번 : 파란색, 3번 : 초록색\n");
+	scanf("%d", &color);
+
+	if (color = = yellow) printf("노란색입니다.\n");
+	else if (color = = red) printf("빨간색입니다.\n");
+	else if (color = = blue) printf("파란색입니다.\n");
+	else if (color = = green) printf("초록색입니다.\n");
+
+	return 0;
+}
+*/
