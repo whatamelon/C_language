@@ -1,0 +1,117 @@
+/* 
+#include <stdio.h>
+
+int SumArray(int* pA, int Size);
+
+int main(void)
+{
+	int a[] = { 10,5,15,25,7 };
+	int Sum;
+
+	Sum = SumArray(a, 5);
+	printf("배열의 합 : %d \n", Sum);
+
+	return 0;
+}
+
+int SumArray(int* pA, int Size)
+{
+	int result = 0, i;
+	for (i = 0; i < Size; i++)
+		// result += pA[i];
+		// result += *(pA + i);
+		// result += *pA ++;
+
+	return result;
+}
+//Clemente font
+*/
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+	char *pC = "C programming";
+	printf("문자열을 변환기호를 이용해서 출력\n");
+	printf("%s\n", pC);
+	printf("반복문을 이용해 한 글자씩 출력\n");
+	while (*pC)
+		printf("%c", *pC++);
+	printf("\n");
+
+	return 0;
+}
+*/
+
+/*  while문 조건식 안에서 문자열을 가리킨다면 
+null문자를 만날 때까지 다음 식을 진행하라는 뜻임.*/
+
+/*
+#include <stdio.h>
+#include <ctype.h>
+
+int main(void)
+{
+	char *pC = "c language";
+
+	while (*pC)
+	{
+		printf("%c", toupper(*pC++));
+	}
+
+	printf("\n");
+	return 0;
+}
+*/
+
+/*
+#include <stdio.h>
+
+int strleng(char *ch);
+int main(void)
+{
+	int len;
+	char str[] = "c language and data structure";
+	len = strleng(str);
+	printf("문자열의 크기는 %d다.\n", len);
+	return 0;
+}
+
+int strleng(char*ch)
+{
+	int index;
+	for (index = 0; *(ch + index) != '\0'; index++);
+
+	return index;
+}
+*/
+
+/* strcpy 많이 씀.
+java string에서 특정 문자로 배열 쪼개기? -> split. */
+
+/*
+#include <stdio.h>
+#include <string.h>
+
+int main(void)
+{
+	char cmp1[40] = "C programming";
+	char cmp2[] = "Java programming";
+	char cmp3[] = "C programming";
+	char str[] = "is easy";
+
+	int length, i;
+	length = strlen(cmp1);
+
+	for (i = 0; i < length; i++)
+		printf("%c", cmp1[i]);
+
+	printf("\n");
+	printf("cmp1과 cmp2는 서로 %s\n", strcmp(cmp1, cmp2) ? "같지 않다." : "같다.");
+	printf("cmp1과 cmp2는 서로 %s\n", strcmp(cmp1, cmp3) ? "같지 않다." : "같다.");
+	printf("cmp1에 cmp2를 복사하면\" %s\"이 출력된다.\n", strcpy(cmp1, cmp2));
+	printf("cmp1에 str을 연결하면\" %s\"가 출력된다.\n", strcat(cmp1, str));
+	return 0;
+}
+*/
